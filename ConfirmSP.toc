@@ -1,0 +1,25 @@
+## Interface: 80100
+## Title: Auto Confirm Static Popups
+## Author: PeknaMrcha alias EduardCurse alias Edik
+## Version: 02.16
+## X-Date: 2018-12-16
+## Notes: Automatic "yes" answer for various static pop-us
+## SavedVariables: ConfirmSP
+
+LibStub\LibStub.lua
+CallbackHandler-1.0\CallbackHandler-1.0.lua
+AceAddon-3.0\AceAddon-3.0.xml
+AceGUI-3.0\AceGUI-3.0.xml
+AceConfig-3.0\AceConfig-3.0.xml
+AceConsole-3.0\AceConsole-3.0.xml
+AceDB-3.0\AceDB-3.0.xml 
+AceDBOptions-3.0\AceDBOptions-3.0.xml 
+AceEvent-3.0\AceEvent-3.0.xml
+AceTimer-3.0\AceTimer-3.0.xml
+AceLocale-3.0\AceLocale-3.0.xml
+
+csp-core.lua
+csp-locale-enUS.lua
+csp-private.lua
+csp-profile.lua
+csp-events.lua
