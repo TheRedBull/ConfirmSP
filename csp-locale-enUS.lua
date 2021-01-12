@@ -10,5 +10,5 @@ if not L then return end
 L["TITLE"] = "Auto Confirm Static Popups"
 L["AUTOANSWER"] = "Autoanswer"
 L["VERBOSE"] = "Verbose output"
-L["REQUEST"] = "\nNot supported, write it down and post on [http://mods.curse.com/addons/wow/confirmsp#comments] when you want it added in addon."
+L["REQUEST"] = "\nNot supported... write it down and post on [https://github.com/TheRedBull/WOW_Auto-Confirm-Static-Popups/issues] for review."
 L["NOTENABLED"] = "\nNot enabled in options."
