@@ -12,5 +12,8 @@ All credit to this addon goes to the original author - I only cleaned it up a bi
 **0.21-01-12.1**
 - Initial refactor for 9.x
 
-#
-### For Original Version History,  see csp-revision.lua
+
+
+---
+
+##### For Original Version History, see [csp-revision.lua](https://github.com/TheRedBull/WOW_Auto-Confirm-Static-Popups/blob/main/csp-revision.lua)
