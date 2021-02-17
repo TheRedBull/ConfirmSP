@@ -8,5 +8,5 @@ P.L = LibStub("AceLocale-3.0"):GetLocale(ADDON, false) -- don't print error if n
 P.TITLE = P.L["TITLE"]
 P.VERSION = (GetAddOnMetadata(ADDON, "Version") or "") .. " " .. (GetAddOnMetadata(ADDON, "X-Date") or "")
 
---P.TIMER = 0.5 -- check pop-ups twice every second
-P.TIMER = 2.0 -- check pop-ups every two seconds
+P.TIMER = 0.5 -- check pop-ups twice every second
+--P.TIMER = 2.0 -- check pop-ups every two seconds

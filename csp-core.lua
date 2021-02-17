@@ -55,13 +55,12 @@ function CSP:BackTimer()
             if editbox and editbox.IsShown and editbox:IsShown() then -- fill in confirm edit box
               editbox:SetText(DELETE_ITEM_CONFIRM_STRING)
             end
-            if button.GetText and ((button:GetText() == YES)) then
+            if button.GetText then
               if button.Click then
-                --button:Click("LeftButton")
+                button:Click("LeftButton")
                   --this is now (Shadowlands) resulting in an [ADDON_ACTION_BLOCKED] ...tried to call the protected function 'UNKNOWN()'
-                  --it appears that "LeftButton" is protected so we need to find another way to 'click' the "YES" button to reintroduce this item delete functionality
-                --displays a message to 'click the button' for the time being
-                self:Verbose(frame.which,"You must confirm delete manually ...for now")
+                    --it appears that Click is protected in the case of deleting items where it works fine for other calls.
+                    --we need to find another way to 'click' the "YES" button to reintroduce the item delete functionality
               end
             end
           else
