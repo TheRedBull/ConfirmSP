@@ -60,6 +60,7 @@ local defaults = {
       ["DELETE_QUEST_ITEM"] = false,
       ["EQUIP_BIND"] = true,
       ["EQUIP_BIND_TRADEABLE"] = false,
+      ["EQUIP_BIND_REFUNDABLE"] = false, -- for equiping items purchased with a refundable currency
       ["EXPERIMENTAL_CVAR_WARNING"] = false,
       ["GOSSIP_CONFIRM"] = true,
       ["LFG_LIST_ENTRY_EXPIRED_TOO_MANY_PLAYERS"] = false,
