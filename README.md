@@ -5,8 +5,11 @@ As a fan of the functionality this addon provides, I'm updating it to support Sh
 ## Credits
 All credit to this addon goes to the original author - I only cleaned it up a bit and made it work in Shadowlands
 
+## Installation
+Download and remane the top-level folder to ConfirmSP then move the folder to your WoW addons folder
+
 ## Known Limitations
-With the current version, only two functions seem to be unstable, namely DELETE_ITEM and DELETE_GOOD_ITEM. The original flow would confirm the item deletion but the button click function has bee updated in 9.0+ so this is curently broken. While the deletion confirmation for DELETE_GOOD_ITEM still works, the button is not clicked. While this doesn't address the full scope of this addon, you don't need to type the confirmantion at this time but you do have to click the button manually - for the time, a chat message will be shown to remind you to click. The message is serving two functions: 1) a placeholder in the code and 2) to suppress any 
+With the current version, only two functions seem to be unstable, namely DELETE_ITEM and DELETE_GOOD_ITEM. The original flow would confirm the item deletion but the button click function has bee updated in 9.0+ so this is curently broken. While the deletion confirmation for DELETE_GOOD_ITEM still works, the button is not clicked. While this doesn't address the full scope of this addon, you don't need to type the confirmantion at this time but you do have to click the button manually - for the time, a chat message will be shown to remind you to click. The message is serving two functions: 1) a placeholder in the code and 2) to suppress any additional errors
 
 ## Version
 **0.21-02-17.1**
