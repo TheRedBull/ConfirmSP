@@ -12,6 +12,10 @@ Download and remane the top-level folder to ConfirmSP then move the folder to yo
 With the current version, only two functions seem to be unstable, namely DELETE_ITEM and DELETE_GOOD_ITEM. The original flow would confirm the item deletion but the button click function has bee updated in 9.0+ so this is curently broken. While the deletion confirmation for DELETE_GOOD_ITEM still works, the button is not clicked. While this doesn't address the full scope of this addon, you don't need to type the confirmantion at this time but you do have to click the button manually - for the time, a chat message will be shown to remind you to click. The message is serving two functions: 1) a placeholder in the code and 2) to suppress any additional errors
 
 ## Version
+**0.21-07-06.1**
+- Updated for 9.1
+- Adds support for new auto-confirm properties
+
 **0.21-02-17.1**
 - Additional changes to fix some functionality
 

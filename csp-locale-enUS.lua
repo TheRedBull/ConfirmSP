@@ -10,5 +10,5 @@ if not L then return end
 L["TITLE"] = "Auto Confirm Static Popups"
 L["AUTOANSWER"] = "Autoanswer"
 L["VERBOSE"] = "Verbose output"
-L["REQUEST"] = "\nNot supported... write it down and post on [https://github.com/TheRedBull/WOW_Auto-Confirm-Static-Popups/issues] for review."
+L["REQUEST"] = "\nNot (yet) supported... post on [https://github.com/TheRedBull/ConfirmSP/issues] for review."
 L["NOTENABLED"] = "\nNot enabled in options."

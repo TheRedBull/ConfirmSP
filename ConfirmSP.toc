@@ -1,8 +1,8 @@
 ## Interface: 90100
 ## Title: Auto Confirm Static Popups
-## Author: TheRedBull (9.0 UPDATE) with all other credit to "PeknaMrcha alias EduardCurse alias Edik"
-## Version: 0.21.01.12
-## X-Date: 2021-01-12
+## Author: TheRedBull (9.1 UPDATE) with all other credit to "PeknaMrcha alias EduardCurse alias Edik"
+## Version: 0.21.07.06
+## X-Date: 2021-07-06
 ## Notes: Automatic "yes" answer for various static pop-us
 ## SavedVariables: ConfirmSP
 
