@@ -15,6 +15,7 @@ local defaults = {
       ["ABANDON_QUEST"] = true,
       ["ABANDON_QUEST_WITH_ITEMS"] = true,
       ["ACTIVATE_FOLLOWER"] = true,
+      ["ANIMA_DIVERSION_CONFIRM_CHANNEL"] = false,
       ["AUTOEQUIP_BIND"] = true,
       ["BATTLE_PET_PUT_IN_CAGE"] = false,
       ["BUYEMALL_CONFIRM"] = false,
