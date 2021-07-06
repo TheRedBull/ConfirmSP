@@ -1,4 +1,4 @@
-## Interface: 90002
+## Interface: 90100
 ## Title: Auto Confirm Static Popups
 ## Author: TheRedBull (9.0 UPDATE) with all other credit to "PeknaMrcha alias EduardCurse alias Edik"
 ## Version: 0.21.01.12
