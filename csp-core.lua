@@ -23,24 +23,26 @@ function CSP:OnInitialize() -- app initialize
 end
 local showWhich = {}
 local blacklisted = {
-  ["DANGEROUS_SCRIPTS_WARNING"] = true, -- it call protected function
-  ["GARRISON_SHIP_RENAME"] = true, -- it make no sence, because name of ship need to be typed before confirm
-  ["VOTE_BOOT_PLAYER"] = true, -- this I will not automate anyone can decide on his own
+  ["BUYOUT_AUCTION"] = true, -- require interaction
+  ["CANCEL_AUCTION"] = true, -- another protected function CancelAuction() 
   ["CONFIRM_ARTIFACT_RESPEC"] = true, -- Respec cost power so no automation here
+  ["CONFIRM_DISENCHANT_ROLL"] = true, -- sorry but this addon is too simple minded to support this
+  ["CONFIRM_FOLLOWER_EQUIPMENT"] = true, -- 7.1.5 patch another protected function pain in ass
+  ["CONFIRM_LEAVE_BATTLEFIELD"] = true, -- in PvP you are on your own
+  ["CONFIRM_LOOT_ROLL"] = true, -- sorry but this addon is too simple minded to support this
+  ["CONFIRM_UPGRADE_ITEM"] = true, -- it call protected function
+  ["DANGEROUS_SCRIPTS_WARNING"] = true, -- it call protected function
+  ["DELETE_ITEM"] = true, -- it call protected function
+  ["GARRISON_SHIP_RENAME"] = true, -- it make no sence, because name of ship need to be typed before confirm
+  ["GUILDBANK_DEPOSIT"] = true, -- dialog need fill-up number it can't be automated
+  ["GUILDBANK_WITHDRAW"] = true, -- dialog need fill-up number it can't be automated
+  ["PET_BATTLE_FORFEIT_NO_PENALTY"] = true, -- another piece code moved to protected
+  ["RENAME_PET"] = true, -- name need to be defined by user
   ["REPLACE_ENCHANT"] = true, -- it call protected function
   ["SPELL_CONFIRMATION_PROMPT"] = true, -- sometime call protected function
-  ["PET_BATTLE_FORFEIT_NO_PENALTY"] = true, -- another piece code moved to protected
-  ["CONFIRM_DISENCHANT_ROLL"] = true, -- sorry but this addon is too simple minded to support this
-  ["CONFIRM_LOOT_ROLL"] = true, -- sorry but this addon is too simple minded to support this
-  ["CANCEL_AUCTION"] = true, -- another protected function CancelAuction() 
-  ["CONFIRM_FOLLOWER_EQUIPMENT"] = true, -- 7.1.5 patch another protected function pain in ass
-  ["GUILDBANK_WITHDRAW"] = true, -- dialog need fill-up number it can't be automated
-  ["GUILDBANK_DEPOSIT"] = true, -- dialog need fill-up number it can't be automated
-  ["WQA_LEAVE_GROUP"] = true, -- this is from 3rd party add-on and leave instance group is handled by default
   ["USE_NO_REFUND_CONFIRM"] = true, -- another option rendered unusable 7.3 hotfix
-  ["BUYOUT_AUCTION"] = true, -- require interaction
-  ["RENAME_PET"] = true, -- name need to be defined by user
-  ["CONFIRM_LEAVE_BATTLEFIELD"] = true, -- in PvP you are on your own
+  ["VOTE_BOOT_PLAYER"] = true, -- this I will not automate anyone can decide on his own
+  ["WQA_LEAVE_GROUP"] = true, -- this is from 3rd party add-on and leave instance group is handled by default
 }
 function CSP:BackTimer()
   if InCombatLockdown() then return end -- only out-of combat is safe to simulate clicks
@@ -55,13 +57,8 @@ function CSP:BackTimer()
             if editbox and editbox.IsShown and editbox:IsShown() then -- fill in confirm edit box
               editbox:SetText(DELETE_ITEM_CONFIRM_STRING)
             end
-            if button.GetText then
-              if button.Click then
-                button:Click("LeftButton")
-                  --this is now (Shadowlands) resulting in an [ADDON_ACTION_BLOCKED] ...tried to call the protected function 'UNKNOWN()'
-                    --it appears that Click is protected in the case of deleting items where it works fine for other calls.
-                    --we need to find another way to 'click' the "YES" button to reintroduce the item delete functionality
-              end
+            if button.Click then
+              button:Click("LeftButton")
             end
           else
             if not showWhich[frame.which] then
