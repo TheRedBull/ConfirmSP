@@ -26,6 +26,7 @@ local defaults = {
       ["CONFIRM_AZERITE_EMPOWERED_SELECT_POWER"] = true,
       ["CONFIRM_BINDER"] = false,
       ["CONFIRM_BUY_BANK_SLOT"] = true,
+      ["CONFIRM_BUY_BANK_TAB"] = false, --Warband bank tab
       ["CONFIRM_BUY_REAGENTBANK_TAB"] = true,
       ["CONFIRM_DELETE_EQUIPMENT_SET"] = true,
       ["CONFIRM_DELETE_SELECTED_MACRO"] = true,

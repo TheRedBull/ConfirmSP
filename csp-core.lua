@@ -23,6 +23,8 @@ function CSP:OnInitialize() -- app initialize
 end
 local showWhich = {}
 local blacklisted = {
+  ["BANK_MONEY_DEPOSIT"] = true, -- dialog need fill-up number it can't be automated - Warband bank
+  ["BANK_MONEY_WITHDRAW"] = true, -- dialog need fill-up number it can't be automated - Warband bank
   ["BUYOUT_AUCTION"] = true, -- require interaction
   ["CANCEL_AUCTION"] = true, -- another protected function CancelAuction() 
   ["CONFIRM_ARTIFACT_RESPEC"] = true, -- Respec cost power so no automation here
@@ -37,6 +39,7 @@ local blacklisted = {
   ["GUILDBANK_DEPOSIT"] = true, -- dialog need fill-up number it can't be automated
   ["GUILDBANK_WITHDRAW"] = true, -- dialog need fill-up number it can't be automated
   ["PET_BATTLE_FORFEIT_NO_PENALTY"] = true, -- another piece code moved to protected
+  ["PICKUP_MONEY"] = true, -- dialog need fill-up number it can't be automated
   ["RENAME_PET"] = true, -- name need to be defined by user
   ["REPLACE_ENCHANT"] = true, -- it call protected function
   ["SPELL_CONFIRMATION_PROMPT"] = true, -- sometime call protected function

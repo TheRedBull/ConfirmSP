@@ -1,17 +1,23 @@
 # Auto Confirm Static Popups
 ## About
-As a fan of the functionality this addon provides, I'm updating it to support Shadowlands!
+As a fan of the functionality this addon provides, I'm updating it to support ~~Shadowlands~~ ~~Dragonflight~~ The War Within!
 
 ## Credits
-All credit to this addon goes to the original author - I only cleaned it up a bit and made it work in Shadowlands
+All credit to this addon goes to the original author - I only cleaned it up a bit and made it work in later versions of the game
 
 ## Installation
 Download and remane the top-level folder to ConfirmSP then move the folder to your WoW addons folder
 
+NOTE: I'm trying to figure out how to publish this on CurseForge
+
 ## Known Limitations
-With the current version, only two functions seem to be unstable, namely DELETE_ITEM and DELETE_GOOD_ITEM. The original flow would confirm the item deletion but the button click function has bee updated in 9.0+ so this is curently broken. While the deletion confirmation for DELETE_GOOD_ITEM still works, the button is not clicked. While this doesn't address the full scope of this addon, you don't need to type the confirmantion at this time but you do have to click the button manually - for the time, a chat message will be shown to remind you to click. The message is serving two functions: 1) a placeholder in the code and 2) to suppress any additional errors
+Blizzard makes API changes and it breaks things... but all the most critical things work ...most of the time ;P
 
 ## Version
+**0.24-08-22.1**
+- Adds some new Warband related triggers and blacklists a couple more that require input
+- Updates all Ace libs to the latest releases
+
 **0.24-08-19.1**
 - Bump for 11.0.2
 - Fixes API error with 11.0.2
