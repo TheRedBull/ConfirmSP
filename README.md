@@ -6,14 +6,17 @@ As a fan of the functionality this addon provides, I'm updating it to support ~~
 All credit to this addon goes to the original author - I only cleaned it up a bit and made it work in later versions of the game
 
 ## Installation
-~~Download and remane the top-level folder to ConfirmSP then move the folder to your WoW addons folder~~
+Download and remane the top-level folder to ConfirmSP then move the folder to your WoW addons folder
 
-NOW AVAILABLE ON [CURSEFORGE](https://www.curseforge.com/wow/addons/confirm-static-popups)!!
+NOTE: I'm trying to figure out how to publish this on CurseForge
 
 ## Known Limitations
 Blizzard makes API changes and it breaks things... but all the most critical things work ...most of the time ;P
 
 ## Version
+**0.24-08-31.1**
+- Adds support for [CONVERT_TO_BIND_TO_ACCOUNT_CONFIRM]
+
 **0.24-08-22.1**
 - Adds some new Warband related triggers and blacklists a couple more that require input
 - Updates all Ace libs to the latest releases
@@ -38,7 +41,7 @@ Blizzard makes API changes and it breaks things... but all the most critical thi
 - Added [TOMTOM_REMOVE_ALL_CONFIRM]
 
 **0.21-01-12.1**
-- Initial refactor for 9.x
+- Initial refactor for 9.x by TheRedBull
 
 
 ---

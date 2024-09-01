@@ -52,6 +52,7 @@ local defaults = {
       ["CONFIRM_RESET_TO_DEFAULT_KEYBINDINGS"] = true,
       ["CONFIRM_SAVE_EQUIPMENT_SET"] = true,
       ["CONFIRM_SUMMON"] = false,
+      ["CONVERT_TO_BIND_TO_ACCOUNT_CONFIRM"] = false,
       ["DANGEROUS_MISSIONS"] = true,
       ["DEACTIVATE_FOLLOWER"] = true,
       ["DEATH"] = false,
