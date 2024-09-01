@@ -14,6 +14,9 @@ NOW AVAILABLE ON [CURSEFORGE](https://www.curseforge.com/wow/addons/confirm-stat
 Blizzard makes API changes and it breaks things... but all the most critical things work ...most of the time ;P
 
 ## Version
+**0.24-08-31.1**
+- Adds support for [CONVERT_TO_BIND_TO_ACCOUNT_CONFIRM]
+
 **0.24-08-22.1**
 - Adds some new Warband related triggers and blacklists a couple more that require input
 - Updates all Ace libs to the latest releases
@@ -38,7 +41,7 @@ Blizzard makes API changes and it breaks things... but all the most critical thi
 - Added [TOMTOM_REMOVE_ALL_CONFIRM]
 
 **0.21-01-12.1**
-- Initial refactor for 9.x
+- Initial refactor for 9.x by TheRedBull
 
 
 ---
